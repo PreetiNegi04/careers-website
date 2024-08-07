@@ -12,21 +12,26 @@
         height:360px;
         width:100%;
         object-fir: cover;
+        margin-bottom:16px;
       }
     </style>
   </head>
   <body>
     {% include 'nav.html' %}
+    
+      <img id = "banner" class = "img-fluid" src = "https://21c04c9a-b26f-4e8b-869d-0020ff9c2acd-00-cf800l441828.pike.replit.dev/static/banner.jpg" >
     <div class = "container">
     <h1 class = "text-center mt-4 mb-4"> Jovin Careers</h1>
-    <img id = "banner" class = "img-fluid" src = "https://21c04c9a-b26f-4e8b-869d-0020ff9c2acd-00-cf800l441828.pike.replit.dev/static/banner.jpg" height = "320" >
-    <h2 class = "text-center mt-2 mb-2">
-      About Jovin
-    </h2>
+      <div class ="row" style = "margin-bottom:16px;">
+        <div class="col-md-6">
     <p class = "lead">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum varius nulla, non consequat magna sagittis et. Etiam quis scelerisque sem. Praesent pretium erat vitae tortor tempus, a ullamcorper libero suscipit. Fusce ut nunc eros. Mauris non porta sem. Phasellus ex tortor, sollicitudin nec porttitor sit amet, ultrices eu nibh. Phasellus convallis sodales viverra. Fusce suscipit vulputate ultrices. Proin maximus sem eu nisl finibus feugiat. Nam sit amet vehicula velit. Cras sit amet dapibus massa. Vestibulum varius est quis purus laoreet efficitur. Morbi ut sem dignissim, tincidunt arcu non, tincidunt urna. Curabitur quis facilisis nisl. Curabitur sit amet sagittis libero.
 
       Vestibulum ultricies turpis vitae lorem posuere pretium. Aliquam nec sollicitudin ante. Aenean pulvinar vulputate nulla, sed fermentum ligula. Praesent mauris sem, tristique at metus sit amet, hendrerit eleifend dui. In hac habitasse platea dictumst. Donec hendrerit venenatis diam. Curabitur a augue in leo elementum feugiat. Mauris egestas ornare ex, eget mollis risus placerat eget. Aliquam quis interdum erat, eget tincidunt odio. Cras scelerisque imperdiet purus et sagittis. Vestibulum tempor, dui suscipit pretium rhoncus, purus libero blandit tellus, et aliquet libero ligula vitae lectus. Integer auctor enim sollicitudin, fringilla mauris ut, ultricies urna. Donec in urna efficitur, mollis velit in, placerat sapien. Nam facilisis tortor libero, et elementum sem placerat quis. Duis suscipit, purus vitae suscipit cursus, purus turpis hendrerit tellus, id mattis ante neque non risus. Integer dictum hendrerit justo, nec fermentum sem tempus eget.
+      </div>
+        <div class = "d-none d-md-block col-md-6">
+          <img src = "/static/career.jpg" style = "height:320px; border-radius:4px;">
+      </div>
     </p>
     <h2 class = "text-center  mt-2 mb-2">Job Openings</h2>
     <p>
@@ -40,6 +45,7 @@
           Copyright Jovin 2024
         </p>
       </div>
+      {%include 'footer.html'%}
   </div>
   </body>
 
